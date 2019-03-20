@@ -1,0 +1,49 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+	
+// ≥768px
++media-breakpoint-down(sm)
+	html
+		font-size: 7px
+// ≥576px
++media-breakpoint-down(xs)
+	.visible-sm
+		display: none
+	.logo 
+		padding: 20px 0 20px 0
+	.m-menu-link
+		display: block
+	.menu-link
+		line-height: 10rem
+	.portfolio
+		&__header
+			font-size: 40px
+		&__subtitle
+			font-size: 14px
+	.services
+		&__header
+			font-size: 35px
+		&__subtitle
+			font-size: 14px
+	//.service-img
+		//flex-direction: column
+		//&__text
+			//margin-bottom: 60px
+// ≤576px
++media-breakpoint-up(sm)
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

@@ -1,0 +1,368 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "body"
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab&subset=cyrillic,cyrillic-ext');
+
+.m-menu-link
+	line-height: 80px
+	float: right
+	color: $green
+	display: none
+	font-size: 30px
+	&:hover
+		color: $green
+		cursor: pointer
+.m-menu
+	margin: 0
+	position: fixed
+	right: 0
+	top: 0
+	height: 100vh
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	list-style: none
+	font-size: 3rem
+	line-height: 6rem
+	background-color: $black
+	z-index: 999
+	transition: 0.2s
+	transform: translateX(-100%)
+	.menu-link
+		color: $yellow
+
+.m-menu__active
+	transform: translateX(0%)
+	.close-menu
+		position: fixed
+		right: 6rem
+		top: 0
+		font-size: 5rem
+		font-weight: 900
+		color: $yellow
+		&:hover
+			cursor: pointer
+
+.logo
+	&__name
+		margin-bottom: 0
+		text-transform: uppercase
+		color: $nav-grey
+	&__img 
+		margin-right: 5px
+.navigation-list
+	height: 80px
+	align-items: center
+	padding-left: 0
+	list-style-type: none
+	text-transform: uppercase
+	margin-bottom: 0
+	&__item
+		margin-left: 15px
+	&__text-item
+		font-family: $Montserrat-Bold
+		font-weight: bold
+		color: #777
+		text-decoration: none
+		font-size: 14px
+		transition: 0.2s ease-out
+		border-bottom: 0px solid #7cc576
+		padding-bottom: 10px
+		&:hover, &:focus, &:active
+			color: #2AB41F
+			border-bottom: 1px solid #7cc576
+			text-decoration: none
+			padding-bottom: 3px
+			outline: none
+		&:active
+			color: #f86900
+			border-bottom: 1px solid #f86900
+
+.portfolio
+	height: 100vh
+	background-image: url(../img/Background.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.65) inset
+	&__header
+		padding-top: 70px
+		padding-bottom: 20px
+		font-family: $Montserrat-Bold
+		font-weight: 700
+		font-size: 60px
+		color: $color1
+		line-height: 65px
+		background-size: cover
+		background-position: center
+		text-transform: uppercase
+		letter-spacing: -1px
+	&__subtitle
+		font-size: 20px
+		color: $gark-grey
+		font-family: $RobotoSlab-Regular
+	.button
+		margin-top: 50px
+		font-size: 16px
+		font-weight: 700
+		color: #ffffff
+		font-family: $Montserrat-Bold
+		height: 60px
+		background-color: $button-green
+		border-radius: 60px
+		padding-left: 35px
+		padding-right: 35px
+		text-decoration: none
+		text-transform: uppercase
+		border: none
+		outline: none
+
+.services
+	&__header
+		font-size: 40px
+		color: $services-color
+		margin-top: 70px
+		font-family: $Montserrat-Bold
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: -1px
+	&__subtitle
+		font-size: 20px
+		color: $gark-grey
+		font-family: $RobotoSlab-Regular
+		margin-bottom: 70px
+.service-img
+	//display: block
+	&__icon
+		margin-bottom: 35px
+	&__header
+		font-family: $Montserrat-Bold
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+	&__text
+		color: $gark-grey
+		font-family: $RobotoSlab-Regular
+
+.relax-bg
+	position: relative
+	background-image: url(../img/Shape.png)
+	background-repeat: no-repeat
+	margin-top: 80px
+	background-size: cover
+	background-position: center
+	height: 615px
+	.relax
+		position: absolute
+		top: 10%
+		left: 35%
+		&__title
+			font-family: $Montserrat-Bold
+			font-size: 30px
+			font-weight: 700
+			text-transform: uppercase
+			color: $color1
+		&__green
+			color: green
+		&__subtitle
+			color: $subtitle-color
+			font-family: $RobotoSlab-Regular
+		.list-icons
+			display: flex
+			flex-direction: column
+			list-style-type: none
+			padding: 0
+			//outline: 1px solid red
+			&__img
+				margin-right: 5px
+			&__list
+				padding: 10px 10px 10px 0
+				color: $faint-grey
+		.first-button
+			display: inline-block
+			margin-top: 60px		
+			font-size: 16px
+			font-weight: 700
+			color: #ffffff
+			font-family: $Montserrat-Bold
+			height: 60px
+			background-color: $button-green
+			border-radius: 60px
+			padding-left: 35px
+			padding-right: 35px
+			padding-top: 20px
+			padding-bottom: 20px
+			text-decoration: none
+			text-transform: uppercase
+	
+.projects
+	outline: 0px solid red
+	//height: 650px
+	display: flex
+	flex-direction: column
+	align-items: center
+	.heading-3
+			font-size: 40px
+			color: $services-color
+			padding-top: 70px
+			padding-bottom: 30px
+			font-family: $Montserrat-Bold
+			font-weight: 700
+			line-height: 65px
+			background-size: cover
+			background-position: center
+			text-transform: uppercase
+			letter-spacing: -1px
+	.subtitle
+			font-size: 20px
+			color: $services-font
+			font-family: $RobotoSlab-Regular
+			padding-bottom: 50px	
+.framework
+	position: relative
+	display: flex
+	flex-direction: column
+	margin-bottom: 100px
+	&__header
+		font-family: $Montserrat-Bold
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+	&__text
+		color: $subtitle-color
+		font-family: $RobotoSlab-Regular
+		margin-bottom: 50px
+	.develop
+		display: flex
+		flex-direction: column
+		list-style-type: none
+		padding-left: 0
+		&__list
+			margin-bottom: 30px
+		&__title
+			margin-bottom: 0
+			line-height: 50px
+			font-family: $Montserrat-Bold
+			font-size: 16px
+			font-weight: 700
+		&__subtitle
+			margin-bottom: 0
+			color: $faint-grey
+			line-height: 0
+		&__img
+			display: block
+			float: left
+			margin-right: 10px
+		&__text
+			color: $faint-grey
+		&__details
+			color: $green
+			font-weight: bold
+			text-transform: uppercase
+			&:hover
+				text-decoration: none
+		&__ipad
+			position: absolute
+			right: -9%
+			top: -6%
+			background-image: url(../img/iPad.png)
+			background-repeat: no-repeat
+			width: 70%
+			height: 681px
+
+.culture
+	background-color: #f9f9f9
+	margin-bottom: 50px
+	.values
+		display: flex
+		flex-direction: column
+		text-align: center
+		&__title
+			font-size: 40px
+			color: $services-color
+			padding-top: 70px
+			padding-bottom: 30px
+			font-family: $Montserrat-Bold
+			font-weight: 700
+			line-height: 65px
+			background-size: cover
+			background-position: center
+			text-transform: uppercase
+			letter-spacing: -1px
+		&__subtitle
+			font-size: 20px
+			color: $services-font
+			font-family: $RobotoSlab-Regular
+			padding-bottom: 50px	
+	.three-media-blocks
+		height: 400px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+		.media__separator-block
+			height: 91px
+			flex: 1
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 1rem
+			.media__separator-line
+				height: 1px
+				flex: 1
+				background-color: #c4c4c4
+
+		.media
+			text-align: center
+			&__img
+				display: inline-block
+				margin-bottom: 20px
+				text-align: center
+				height: 91px
+				width: 91px
+				background-repeat: no-repeat 
+			&__text
+				font-size: 20px
+				font-weight: bold
+				text-transform: uppercase
+			&__subtitles
+				font-size: 15px
+				color: $services-font
+
+.clients
+	display: flex
+	flex-direction: column
+	text-align: center
+	&__title
+		font-size: 40px
+		color: $services-color
+		padding-top: 70px
+		padding-bottom: 30px
+		font-family: $Montserrat-Bold
+		font-weight: 700
+		line-height: 65px
+		background-size: cover
+		background-position: center
+		text-transform: uppercase
+		letter-spacing: -1px
+	&__subtitle
+		font-size: 20px
+		color: $services-font
+		font-family: $RobotoSlab-Regular
+		padding-bottom: 50px	
+.content
+	display: flex
+	text-align: center
+	justify-content: center
+	&__img-circle
+		background-color: url(../img/ClippingMask.png)
+		background-repeat: no-repeat
+		height: 227px
+		color: red
+	&__img-square
+	
+
+@import "media" // Always at the end
