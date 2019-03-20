@@ -96,7 +96,6 @@
 	background-position: center
 	box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.65) inset
 	&__header
-		//padding-top: 60px
 		font-family: $Montserrat-Bold
 		font-weight: 700
 		font-size: 60px
@@ -141,7 +140,6 @@
 		font-family: $RobotoSlab-Regular
 		margin-bottom: 70px
 .service-img
-	//display: block
 	&__icon
 		margin-bottom: 35px
 	&__header
@@ -202,16 +200,11 @@
 		outline: none
 	
 .projects
-	outline: 0px solid red
-	//height: 650px
-	display: flex
-	flex-direction: column
-	align-items: center
-	.heading-3
+	padding-top: 70px
+	&__header
+			margin-bottom: 0
 			font-size: 40px
 			color: $services-color
-			padding-top: 70px
-			padding-bottom: 30px
 			font-family: $Montserrat-Bold
 			font-weight: 700
 			line-height: 65px
@@ -219,16 +212,21 @@
 			background-position: center
 			text-transform: uppercase
 			letter-spacing: -1px
-	.subtitle
+	&__subtitle
 			font-size: 20px
 			color: $services-font
 			font-family: $RobotoSlab-Regular
 			padding-bottom: 50px	
+.ipad
+	background-image: url(../img/iPad.png)
+	background-repeat: no-repeat
+	width: 60%
+	height: 681px
+	float: right
 .framework
-	position: relative
+	margin-bottom: 100px
 	display: flex
 	flex-direction: column
-	margin-bottom: 100px
 	&__header
 		font-family: $Montserrat-Bold
 		font-size: 18px
@@ -267,14 +265,6 @@
 			text-transform: uppercase
 			&:hover
 				text-decoration: none
-		&__ipad
-			position: absolute
-			right: -9%
-			top: -6%
-			background-image: url(../img/iPad.png)
-			background-repeat: no-repeat
-			width: 70%
-			height: 681px
 
 .culture
 	background-color: #f9f9f9
