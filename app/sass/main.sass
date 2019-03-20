@@ -216,17 +216,19 @@
 			font-size: 20px
 			color: $services-font
 			font-family: $RobotoSlab-Regular
-			padding-bottom: 50px	
-.ipad
-	background-image: url(../img/iPad.png)
-	background-repeat: no-repeat
-	width: 60%
-	height: 681px
-	float: right
+			padding-bottom: 50px
+.iPad
+	position: relative
+	&__img
+		background-repeat: no-repeat
+		width: 40rem
+		position: absolute
+		right: 0
+		top: 20rem
 .framework
 	margin-bottom: 100px
 	display: flex
-	flex-direction: column
+	flex-direction: column	
 	&__header
 		font-family: $Montserrat-Bold
 		font-size: 18px
