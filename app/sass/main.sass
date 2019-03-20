@@ -47,13 +47,19 @@
 			cursor: pointer
 
 .logo
+	display: flex
+	align-items: center
+	height: 80px
 	&__name
 		margin-bottom: 0
 		text-transform: uppercase
 		color: $nav-grey
-	&__img 
+	&__img
 		margin-right: 5px
+
 .navigation-list
+	display: flex
+	justify-content: flex-end
 	height: 80px
 	align-items: center
 	padding-left: 0
@@ -89,8 +95,7 @@
 	background-position: center
 	box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.65) inset
 	&__header
-		padding-top: 70px
-		padding-bottom: 20px
+		padding-top: 60px
 		font-family: $Montserrat-Bold
 		font-weight: 700
 		font-size: 60px
@@ -105,7 +110,7 @@
 		color: $gark-grey
 		font-family: $RobotoSlab-Regular
 	.button
-		margin-top: 50px
+		margin-top: 120px
 		font-size: 16px
 		font-weight: 700
 		color: #ffffff
@@ -147,56 +152,53 @@
 		color: $gark-grey
 		font-family: $RobotoSlab-Regular
 
-.relax-bg
-	position: relative
+.relax
 	background-image: url(../img/Shape.png)
 	background-repeat: no-repeat
 	margin-top: 80px
 	background-size: cover
 	background-position: center
 	height: 615px
-	.relax
-		position: absolute
-		top: 10%
-		left: 35%
-		&__title
+	.text
+		&__header
+			margin-top: 50px
 			font-family: $Montserrat-Bold
 			font-size: 30px
 			font-weight: 700
 			text-transform: uppercase
-			color: $color1
+			color: $white
 		&__green
 			color: green
 		&__subtitle
-			color: $subtitle-color
+			color: $gark-grey
 			font-family: $RobotoSlab-Regular
-		.list-icons
-			display: flex
-			flex-direction: column
-			list-style-type: none
-			padding: 0
-			//outline: 1px solid red
-			&__img
-				margin-right: 5px
-			&__list
-				padding: 10px 10px 10px 0
-				color: $faint-grey
-		.first-button
-			display: inline-block
-			margin-top: 60px		
-			font-size: 16px
 			font-weight: 700
-			color: #ffffff
-			font-family: $Montserrat-Bold
-			height: 60px
-			background-color: $button-green
-			border-radius: 60px
-			padding-left: 35px
-			padding-right: 35px
-			padding-top: 20px
-			padding-bottom: 20px
-			text-decoration: none
-			text-transform: uppercase
+	.list-check
+		display: flex
+		flex-direction: column
+		list-style-type: none
+		padding: 0
+		&__img
+			margin-right: 5px
+		&__list
+			padding: 10px 10px 10px 0
+			color: $gark-grey
+			font-weight: 700
+	.button
+		margin-top: 60px		
+		font-size: 16px
+		font-weight: 700
+		color: #ffffff
+		font-family: $Montserrat-Bold
+		height: 60px
+		background-color: $button-green
+		border-radius: 60px
+		padding-left: 35px
+		padding-right: 35px
+		text-decoration: none
+		text-transform: uppercase
+		border: none
+		outline: none
 	
 .projects
 	outline: 0px solid red

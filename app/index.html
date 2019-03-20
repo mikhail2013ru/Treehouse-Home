@@ -38,8 +38,8 @@
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 col-sm-4 col-8 d-flex align-items-center">
-				<div class="logo d-flex align-items-center">
+			<div class="col-md-3 col-sm-4 col-8">
+				<div class="logo">
 					<a href="#">
 						<img class="logo__img" src="img/leaf.png" alt="Treehouse-Home">
 					</a>
@@ -49,7 +49,7 @@
 
 			<div class="col-md-9 col-sm-8 col-4">
 				<nav class="navigation visible-sm">
-					<ul class="navigation-list d-flex align-items-center justify-content-end">
+					<ul class="navigation-list ">
 						<li class="navigation-list__item"><a class="navigation-list__text-item" href="">home</a></li>
 						<li class="navigation-list__item"><a class="navigation-list__text-item" href="">blog</a></li>
 						<li class="navigation-list__item"><a class="navigation-list__text-item" href="">portfolio</a></li>
@@ -67,14 +67,13 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="portfolio flex-column text-center">
+				<div class="portfolio text-center">
 					
 						<h1 class="portfolio__header">Creative Digital <Br />Solutions</h1>
 
 						<p class="portfolio__subtitle">Proin iaculis purus consequat sem cure.</p>
 						
 						<button type="button" class="button">View Portfolio</button>
-						<!-- <a class="button" href="#">View Portfolio</a> -->
 				</div>
 				
 			</div>
@@ -94,9 +93,9 @@
 			</div>
 			
 
-			<div class="service-img text-center d-flex flex-lg-row flex-md-column flex-sm-column flex-column">
+			<div class="row text-center">
 				<!-- service-box 1 -->
-				<div class="col-lg-4">
+				<div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
 					<div class="service-img__icon"><img src="img/Heart.svg" alt="Heart"></div>
 					
 					<p class="service-img__header">beautiful designs</p>
@@ -107,7 +106,7 @@
 				</div>
 			
 			
-				<div class="col-lg-4">
+				<div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
 					<!-- service-box 2 -->
 					<div class="service-img__icon"><img src="img/Mobile.svg" alt="Mobile"></div>
 					<p class="service-img__header">responsive web</p>
@@ -116,11 +115,11 @@
 								aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
 					<!-- service-box 3 -->
 					<div class="service-img__icon"><img src="img/Graph.svg" alt="Graph"></div>
 					<p class="service-img__header">Marketing tools</p>
-					<p class="service-img__text">Proin iaculis purus consequat sem cure
+					<p class="service-img__text--nom">Proin iaculis purus consequat sem cure
 								digni ssim. Donec porttitora entum suscipit
 								aenean rhoncus posuere odio in tincidunt.</p>
 				<!-- col-md-4 -->
@@ -134,33 +133,36 @@
 </section>
 
 	<!-- just-relax -->
+<section>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="relax-bg">
-					<div class="relax">
-						<p class="relax__title">just relax <span class="relax__green">&amp;</span><Br />let us do the heavy lifting</p>
-					
-						<p class="relax__subtitle">Proin iaculis purus consequat sem cure
+				<div class="relax">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-4 col-md-9 offset-md-3 col-sm-9 offset-sm-10">
+						<p class="text__header">just relax <span class="text__green">&amp;</span><Br />let us do the heavy lifting</p>
+						<p class="text__subtitle">Proin iaculis purus consequat sem cure
 							digni ssim. Donec porttitora entum suscipit
 							aenean rhoncus posuere odio in tincidunt.</p>
 					
-						<ul class="list-icons">
-							<li class="list-icons__list"><img src="img/Checkmark.png" alt="img" class="list-icons__img">Initial Setup & Customizations</li>
-							<li class="list-icons__list"><img src="img/Checkmark.png" alt="img" class="list-icons__img">Regular Updates</li>
-							<li class="list-icons__list"><img src="img/Checkmark.png" alt="img" class="list-icons__img">Round The Clock Support</li>
+						<ul class="list-check">
+							<li class="list-check__list"><img src="img/Checkmark.png" alt="img" class="list-check__img">Initial Setup & Customizations</li>
+							<li class="list-check__list"><img src="img/Checkmark.png" alt="img" class="list-check__img">Regular Updates</li>
+							<li class="list-check__list"><img src="img/Checkmark.png" alt="img" class="list-check__img">Round The Clock Support</li>
 						</ul>
 
-						<a class="first-button" href="#">learn more</a>
+						<button type="button" class="button" href="#">learn more</button>
 				<!-- relax -->
 				</div>
 				</div>
-			<!-- col-md-12 -->
+				</div>
 			</div>
-		<!-- row -->
+			<!-- col-md-12 -->
 		</div>
-	<!-- container-fluid -->
+		<!-- row -->
 	</div>
+	<!-- container-fluid -->
+</section>
 
 	<!-- cultures -->
 	<div class="container">
