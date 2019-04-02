@@ -4,6 +4,8 @@
 @import "body"
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab&subset=cyrillic,cyrillic-ext');
 
+/* секция mobile menu */
+
 .m-menu-link
 	line-height: 80px
 	float: right
@@ -27,24 +29,34 @@
 	list-style: none
 	font-size: 3rem
 	line-height: 6rem
+	background-image: url(../img/Background.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center 
 	background-color: $black
 	z-index: 999
 	transition: 0.2s
 	transform: translateX(-100%)
 	.menu-link
-		color: $yellow
+		color: $white
+		font-weight: bold
+		font-size: 40px
 
 .m-menu__active
 	transform: translateX(0%)
 	.close-menu
 		position: fixed
-		right: 6rem
-		top: 0
-		font-size: 5rem
+		right: 3rem
+		top: 1rem
+		font-size: 8rem
 		font-weight: 900
-		color: $yellow
+		color: $red
 		&:hover
 			cursor: pointer
+
+/* секция mobile menu */
+
+/* секция navigation */
 
 .logo
 	display: flex
@@ -87,6 +99,10 @@
 			color: #f86900
 			border-bottom: 1px solid #f86900
 
+/* секция navigation */
+
+/* секция portfolio */
+
 .portfolio
 	height: 100vh
 	padding-top: 180px
@@ -125,6 +141,10 @@
 		border: none
 		outline: none
 
+/* секция portfolio */
+
+/* секция services */
+
 .services
 	&__header
 		font-size: 40px
@@ -150,6 +170,10 @@
 	&__text
 		color: $gark-grey
 		font-family: $RobotoSlab-Regular
+
+/* секция services */
+
+/* секция relax */
 
 .relax
 	background-image: url(../img/Shape.png)
@@ -198,7 +222,11 @@
 		text-transform: uppercase
 		border: none
 		outline: none
-	
+
+/* секция relax */
+
+/* секция projects */
+
 .projects
 	padding-top: 70px
 	&__header
@@ -268,6 +296,10 @@
 			&:hover
 				text-decoration: none
 
+/* секция projects */
+
+/* секция culture */
+
 .culture
 	background-color: #f9f9f9
 	margin-bottom: 50px
@@ -312,7 +344,12 @@
 			background-color: $gark-grey
 			display: none
 
+/* секция culture */
+
+/* секция clients */
+
 .clients
+	margin-bottom: 70px
 	&__title
 		font-size: 40px
 		color: $services-color
@@ -375,6 +412,87 @@
 			font-size: 15px
 .top
 	margin-top: 30px
-	
 
+/* секция clients */
+
+/* секция contact */
+.contact
+	padding: 40px
+	background-color: $green
+	&__title
+		margin-top: 20px
+		margin-bottom: 20px
+		text-transform: uppercase
+		color: $white
+	&__button
+		margin: 0 auto
+		border: 2px solid transparent
+		border-radius: 5px
+		border-color: $white
+		padding: 5px 15px
+		text-transform: uppercase
+		background-color: $green
+		font-weight: bold
+		color: $white
+		outline: none
+		&:hover, &:focus, &:active
+			outline: none
+
+/* секция contact */
+
+/* секция bottom-slider */
+
+.bottom-slider
+	padding: 30px
+	.slide 
+		margin-right: 20px
+
+/* секция bottom-slider */
+
+/* секция posts */
+
+.posts
+	background-color: $black
+	padding: 50px 50px 40px 50px
+	&__header
+		color: $white
+		font-size: 18px
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 20px
+		//margin-top: 50px
+	.list
+		padding-left: 0
+		list-style-type: none
+		&__item
+			margin-bottom: 10px
+			color: $white
+			font-size: 15px
+			text-align: justify
+		&__img
+			margin-right: 10px
+		&__text
+			color: $white
+			font-size: 14px
+			font-weight: bold
+		&__time
+			display: block
+			color: $white
+			font-size: 12px
+			margin-bottom: 15px
+	.nomb
+		margin-bottom: 0px
+/* секция posts */
+
+/* Секция footer */
+.footer
+	padding: 20px
+	&__copyrights
+		margin-top: 10px
+		color: $gark-grey
+		font-weight: bold
+		font-family: $Montserrat-Bold
+	.icons
+		margin-right: 5px
+/* Секция footer */
 @import "media" // Always at the end

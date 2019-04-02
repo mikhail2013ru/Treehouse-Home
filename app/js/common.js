@@ -1,13 +1,3 @@
-/* $(function() {
-
-	$('header').after('<div class="mobile-menu d-md-none">');
-	$('.navigation-holder').clone().appendTo('.mobile-menu');
-	$('.mobile-menu-button').click(function () {
-		$('.mobile-menu').stop().slideToggle();
-	});
-
-}); */
-
 $(function () {
 	var link = $('.m-menu-link');
 	var close = $('.close-menu');
@@ -20,4 +10,29 @@ $(function () {
 		event.preventDefault();
 		menu.toggleClass('m-menu__active');
 	});
+	$(".owl-one").owlCarousel({
+		items: 4,
+		nav: true,
+		navText: "",
+		loop: true,
+		autoplay: true,
+		autoplayHoverPause: true,
+		fluidSpeed: 600,
+		autoplaySpeed: 600,
+		navSpeed: 600,
+		dotsSpeed: 600,
+		dragEndSpeed: 600,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 1
+			},
+			1000: {
+				items: 4
+			}
+		}
+	});
+	
 });
