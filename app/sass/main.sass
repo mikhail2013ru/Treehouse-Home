@@ -105,13 +105,13 @@
 
 .portfolio
 	height: 100vh
-	padding-top: 180px
 	background-image: url(../img/Background.jpg)
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
 	box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.65) inset
 	&__header
+		padding-top: 140px
 		font-family: $Montserrat-Bold
 		font-weight: 700
 		font-size: 60px
@@ -122,11 +122,12 @@
 		text-transform: uppercase
 		letter-spacing: -1px
 	&__subtitle
+		padding-top: 20px
 		font-size: 20px
 		color: $gark-grey
 		font-family: $RobotoSlab-Regular
-	.button
-		margin-top: 120px
+	&__button
+		margin-top: 50px
 		font-size: 16px
 		font-weight: 700
 		color: #ffffff
@@ -181,7 +182,7 @@
 	margin-top: 80px
 	background-size: cover
 	background-position: center
-	height: 615px
+	//height: 615px
 	.text
 		&__header
 			margin-top: 50px
@@ -208,7 +209,8 @@
 			color: $gark-grey
 			font-weight: 700
 	.button
-		margin-top: 60px		
+		margin-top: 60px
+		margin-bottom: 60px		
 		font-size: 16px
 		font-weight: 700
 		color: #ffffff
@@ -242,7 +244,7 @@
 			letter-spacing: -1px
 	&__subtitle
 			font-size: 20px
-			color: $services-font
+			color: $gark-grey
 			font-family: $RobotoSlab-Regular
 			padding-bottom: 50px
 .iPad
@@ -259,12 +261,13 @@
 	display: flex
 	flex-direction: column	
 	&__header
+		text-align: left
 		font-family: $Montserrat-Bold
 		font-size: 18px
 		font-weight: 700
 		text-transform: uppercase
 	&__text
-		color: $subtitle-color
+		color: $gark-grey
 		font-family: $RobotoSlab-Regular
 		margin-bottom: 50px
 	.develop
@@ -282,13 +285,13 @@
 			font-weight: 700
 		&__subtitle
 			margin-bottom: 0
-			color: $faint-grey
+			color: $gark-grey
 		&__img
 			display: block
 			float: left
 			margin-right: 10px
 		&__text
-			color: $faint-grey
+			color: $gark-grey
 		&__details
 			color: $green
 			font-weight: bold
@@ -302,13 +305,12 @@
 
 .culture
 	background-color: #f9f9f9
-	margin-bottom: 50px
+	padding-top: 40px
+	padding-bottom: 40px
 	.values
 		&__title
 			font-size: 40px
 			color: $services-color
-			padding-top: 70px
-			padding-bottom: 30px
 			font-family: $Montserrat-Bold
 			font-weight: 700
 			line-height: 65px
@@ -354,7 +356,6 @@
 		font-size: 40px
 		color: $services-color
 		padding-top: 70px
-		padding-bottom: 30px
 		font-family: $Montserrat-Bold
 		font-weight: 700
 		line-height: 65px
@@ -460,7 +461,6 @@
 		font-weight: bold
 		text-transform: uppercase
 		margin-bottom: 20px
-		//margin-top: 50px
 	.list
 		padding-left: 0
 		list-style-type: none
@@ -486,7 +486,7 @@
 
 /* Секция footer */
 .footer
-	padding: 20px
+	padding: 20px 0
 	&__copyrights
 		margin-top: 10px
 		color: $gark-grey
